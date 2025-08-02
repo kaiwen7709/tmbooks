@@ -43,7 +43,7 @@ public class SysMemberController extends BaseController {
     @Autowired
     private SysPasswordService passwordService;
 
-    @RequiresPermissions("system:user:view")
+    @RequiresPermissions("system:member:view")
     @GetMapping()
     public String user()
     {
@@ -84,7 +84,7 @@ public class SysMemberController extends BaseController {
         return AjaxResult.success(message);
     }
 
-    @RequiresPermissions("system:user:view")
+    @RequiresPermissions("system:member:view")
     @GetMapping("/importTemplate")
     @ResponseBody
     public AjaxResult importTemplate()
