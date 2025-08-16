@@ -251,5 +251,6 @@ public class SysMember extends BaseEntity
             .append("updateTime", getUpdateTime())
             .append("remark", getRemark())
             .toString();
+
     }
 }
